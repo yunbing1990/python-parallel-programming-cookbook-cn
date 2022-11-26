@@ -1,7 +1,7 @@
 集体通讯：使用gather通讯
 ========================
 
-``gather`` 函数基本上是反向的 ``scatter`` ，即手机所有进程发送向root进程的数据。 ``mpi4py`` 实现的 ``gather`` 函数如下： ::
+``gather`` 函数基本上是反向的 ``scatter`` ，即收集所有进程发送向root进程的数据。 ``mpi4py`` 实现的 ``gather`` 函数如下： ::
 
     recvbuf = comm.gather(sendbuf, rank_of_root_process)
 
